@@ -19,15 +19,15 @@ By executing the attached programs indicated, the following percentages of succe
                                            SUSY                   HASTIE                  ABALONE
                                       SUSY_sklearn.py          HASTIE_sklearn.py       ABALONE_sklearn.py
 
-NAIVE BAYES                               74.41%                  74.91%                    57.89%
+NAIVE BAYES                                74.41%                  74.91%                    57.89%
 (GaussianNB)
 
 
-GRADIENT FOREST                            100%                    100%                      100%
+GRADIENT FOREST                             100%                    100%                      100%
 (RandomForestClassifier)
 
 
-ADABOOST                                  78.14%                   83.58%                   67.58%
+ADABOOST                                   78.14%                   83.58%                   67.58%
 (AdaBoostClassifier)
 
   
