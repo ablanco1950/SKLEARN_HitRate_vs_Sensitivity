@@ -38,8 +38,7 @@ Then, when repeating the test for SUSY with the attached program SUSY_sklearn_wi
 it consists of the attached Susy20.txt file, which must be transferred to the C: drive, which contains only 20 records extracted from SUSY.csv, and executing SUSY_sklearn.py from spyder.
 It will be seen that all classifiers  shows 13 hits and 7 failures except RANDON FOREST  wich shows 17 hits and 3 failures.
 
-If, intentionally, the class of the first 3 records of Susy20.txt is changed, or the attached Susy20Bad.txt file is used, which is the Susy20.txt with those
-three errors introduced, in which case line 16 of the SUSY_sklearn.py program would have to be changed, changing the file assignment. It is observed that classifiers reflects the 3 failures added except RANDOM FOREST that shows 18 errors and 2 hits, reflecting only one the three errors introduced.
+If, intentionally, the class of the first 3 records of Susy20.txt is changed, or the attached Susy20Bad.txt file is used, which is the Susy20.txt with the three errors introduced, in which case line 16 of the SUSY_sklearn.py program would have to be changed, changing the file assignment. It is observed that classifiers reflects the 3 misses added except RANDOM FOREST that shows 18 errors and 2 hits, reflecting only one of the three errors introduced.
 
 Due to memory problems only 30000 records of SUSY are considered.
 
@@ -58,10 +57,6 @@ the first three records has been changed, and executing AssignClassWithSusyWeigh
 java -jar AssignClassWithSusyWeighted_v1.jar c:\SusyWeighted78PercentHits.txt c:\SUSY20Bad.txt 0.0 4500000.0 0.0 4500000.0 5000000.0
 
 13 hits and 7 failures are obtained, that is, the 3 errors introduced when changing the classes of the first 3 registers have been detected.
-
-On the other hand, changing the proportion of the test and training in train_test_split (df, test_size = 0.2), so that it goes from 20% to 90%, with what would remain
-a very small training, which should provide a greater number of errors, on the other hand it does not seem to affect excessively and GRADIENT FOREST maintains a rate of 100%
-of hits.
 
 REFERENCES:
 
@@ -85,7 +80,7 @@ To the ABALONE file:
 
 https://archive.ics.uci.edu/ml/datasets/abalone, especially the download of the Data Set Description link, you can check the low hit rates
 achieved with this file, however with GRADIENT FOREST (RandomForestClassifier) ​​100% hit rates are achieved not only considering the 3 classes in
-that the 29 classes are summarized, but considering the 29 classes ( run in spyder the attached ABALONE_with_29Classes_sklearn.py)
+that the 29 classes are summarized, to consider the 29 classes ( run in spyder the attached ABALONE_with_29Classes_sklearn.py)
 
 https://github.com/ablanco1950/ABALONE_NAIVEBAYES_WEIGHTED_ADABOOST
 https://github.com/ablanco1950/ABALONE_DECISIONTREE_C4-5
