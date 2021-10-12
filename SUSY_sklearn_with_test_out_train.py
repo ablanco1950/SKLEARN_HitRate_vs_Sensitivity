@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import GradientBoostingClassifier
 
 arr=[]
 arry=[]
@@ -86,7 +87,7 @@ n_train, n_test = len(X_train), len(X_test)
 Y_predict, pred_test = [np.zeros(n_train), np.zeros(n_test)]
 
 lm= GaussianNB()
-lm.fit(X_test,Y_test)   
+lm.fit(X_train,Y_train)   
 Y_predict=lm.predict(X_test)
 
 Y_test_arr=np.array(Y_test)
@@ -111,7 +112,7 @@ print("Total failures TEST = " + str(TotFallos))
 # RandomForestClassifier
 #################################################
 rf= RandomForestClassifier()
-rf.fit(X_test,Y_test)   
+rf.fit(X_train,Y_train)   
 Y_predict=rf.predict(X_test)
 
 TotAciertos=0.0
@@ -133,7 +134,7 @@ print("Total failures TEST = " + str(TotFallos))
 # AdaBoostClassifier
 #################################################
 ab= AdaBoostClassifier()
-ab.fit(X_test,Y_test)   
+ab.fit(X_train,Y_train)   
 Y_predict=ab.predict(X_test)
 
 TotAciertos=0.0
@@ -152,4 +153,23 @@ print("")
 print("RESULTS ADABOOST")    
 print("Total Hits TEST = " + str(TotAciertos))
 print("Total failures TEST = " + str(TotFallos))
+###################################################3
+# GradientBoostClassifier
+#################################################
+gb= GradientBoostingClassifier()
+gb.fit(X_train,Y_train)   
+Y_predict=gb.predict(X_test)
 
+TotAciertos=0.0
+TotFallos=0.0
+  
+for i in range (len(Y_predict)):
+   
+    if (Y_predict[i]==Y_test_arr[i]):
+        TotAciertos=TotAciertos+1
+    else:
+        TotFallos =TotFallos + 1
+print("")  
+print("RESULTS GRADIENT BOOST")    
+print("Total Hits TEST = " + str(TotAciertos))
+print("Total Failuress TEST = " + str(TotFallos))

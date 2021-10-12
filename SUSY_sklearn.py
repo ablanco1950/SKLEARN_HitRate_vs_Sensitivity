@@ -8,13 +8,13 @@ from sklearn.model_selection import train_test_split
 
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.naive_bayes import GaussianNB
-
+from sklearn.ensemble import GradientBoostingClassifier
 arr=[]
 arry=[]
   
 
 f=open("C:\SUSY.csv","r")
-ContaMax=400000;
+ContaMax=100000;
 Conta=0;
 for linea in f:
     Conta=Conta+1
@@ -79,7 +79,7 @@ print("RESULTS NAIVE BAYES")
 print("Total Hits TRAIN = " + str(TotAciertos))
 print("Total failures TRAIN = " + str(TotFallos))
 
-lm.fit(X_test,Y_test)   
+lm.fit(X_train,Y_train)   
 Y_predict=lm.predict(X_test)
 
 Y_test_arr=np.array(Y_test)
@@ -103,7 +103,7 @@ print("Total failures TEST = " + str(TotFallos))
 
 rf= RandomForestClassifier()
 
-rf.fit(X_test,Y_test)   
+rf.fit(X_train,Y_train)   
 Y_predict=rf.predict(X_test)
 # print(Y_predict)
 #pp=np.array(Y_test)
@@ -121,14 +121,14 @@ for i in range (len(Y_predict)):
     else:
         TotFallos =TotFallos + 1
 print("")  
-print("RESULTS GRADIENT FOREST")    
+print("RESULTS RANDOM FOREST")    
 print("Total aciertos TEST = " + str(TotAciertos))
 print("Total fallos TEST = " + str(TotFallos))
 ###################################################3
 # AdaBoostClassifier
 #################################################
 ab= AdaBoostClassifier()
-ab.fit(X_test,Y_test)   
+ab.fit(X_train,Y_train)   
 Y_predict=ab.predict(X_test)
 
 TotAciertos=0.0
@@ -142,6 +142,26 @@ for i in range (len(Y_predict)):
         TotFallos =TotFallos + 1
 print("")  
 print("RESULTS ADABOOST")    
+print("Total Hits TEST = " + str(TotAciertos))
+print("Total Failuress TEST = " + str(TotFallos))
+###################################################3
+# GradientBoostClassifier
+#################################################
+gb= GradientBoostingClassifier()
+gb.fit(X_train,Y_train)   
+Y_predict=gb.predict(X_test)
+
+TotAciertos=0.0
+TotFallos=0.0
+  
+for i in range (len(Y_predict)):
+   
+    if (Y_predict[i]==Y_test_arr[i]):
+        TotAciertos=TotAciertos+1
+    else:
+        TotFallos =TotFallos + 1
+print("")  
+print("RESULTS GRADIENT BOOST")    
 print("Total Hits TEST = " + str(TotAciertos))
 print("Total Failuress TEST = " + str(TotFallos))
 
