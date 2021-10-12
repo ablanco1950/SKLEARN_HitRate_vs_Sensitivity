@@ -35,14 +35,15 @@ GRADIENT BOOST                             78.26%                  84,8%        
 
   
 Then, when repeating the test for SUSY with the attached program SUSY_sklearn_with_test_out_train.py in which the test file is separated from the training file and
-it consists of the attached Susy20.txt file, which must be transferred to the C: drive, which contains only 20 records extracted from SUSY.csv, and executing SUSY_sklearn.py from spyder,
-It will be seen that all classifiers  shows 16 hits and 4 failures except RANDON FOREST  wich shows 18 hits and 2 failures.
-While NAIVE BAYES has 19 hits and 1 miss.
+it consists of the attached Susy20.txt file, which must be transferred to the C: drive, which contains only 20 records extracted from SUSY.csv, and executing SUSY_sklearn.py from spyder.
+It will be seen that all classifiers  shows 13 hits and 7 failures except RANDON FOREST  wich shows 17 hits and 3 failures.
 
 If, intentionally, the class of the first 3 records of Susy20.txt is changed, or the attached Susy20Bad.txt file is used, which is the Susy20.txt with those
-three errors introduced, in which case line 15 of the SUSY_sklearn.py program would have to be changed, changing the file assignment. It is observed that GRADIENT FOREST and
-ADABOOST continue to maintain a hit rate of 20, without reflecting the three errors introduced. NAIVE BAYES reflects 17 hits and 3 misses, reflecting only 2 of
-the 3 additional faults entered.
+three errors introduced, in which case line 16 of the SUSY_sklearn.py program would have to be changed, changing the file assignment. It is observed that classifiers reflects the 3 failures added except RANDOM FOREST that shows 18 errors and 2 hits, reflecting only one the three errors introduced.
+
+Due to memory problems only 30000 records of SUSY are considered.
+
+Comparing with other program and environment:
 
 Downloading and installing the procedure found at https://github.com/ablanco1950/SUSY_WEIGHTED_V1 and running AssignClassWithSusyWeighted_v1.bat,
 changing before the only line of the procedure, so that it is:
