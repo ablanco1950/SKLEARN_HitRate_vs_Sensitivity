@@ -1,4 +1,4 @@
-Using the Sklearn classifiers: Naive Bayes, Gradient Forest and Adaboost, extraordinary success rates are observed, but with loss of sensitivity.
+Using the Sklearn classifiers: Naive Bayes, Random Forest, Adaboost and Gradient Boost, good success rates are observed in a very simple manner. In this work sensitivity is also considered.
 
 Requirements:
 
@@ -19,21 +19,24 @@ By executing the attached programs indicated, the following percentages of succe
                                            SUSY                   HASTIE                  ABALONE
                                       SUSY_sklearn.py          HASTIE_sklearn.py       ABALONE_sklearn.py
 
-NAIVE BAYES                                74.41%                  74.91%                    57.89%
+NAIVE BAYES                               74.41%                  75.04%                    54.9%
 (GaussianNB)
 
 
-GRADIENT FOREST                             100%                    100%                      100%
+RANDOM FOREST                             78,1%                    81,75%                    65,07%
 (RandomForestClassifier)
 
 
-ADABOOST                                   78.14%                   83.58%                   67.58%
+ADABOOST                                   77.6%                   80.75%                   61.72%
 (AdaBoostClassifier)
 
+GRADIENT BOOST                             78.26%                  84,8%                    64.7%
+(GradientBoostClassifier)
+
   
-However, when repeating the test for SUSY with the attached program SUSY_sklearn_with_test_out_train.py in which the test file is separated from the training file and
+Then, when repeating the test for SUSY with the attached program SUSY_sklearn_with_test_out_train.py in which the test file is separated from the training file and
 it consists of the attached Susy20.txt file, which must be transferred to the C: drive, which contains only 20 records extracted from SUSY.csv, and executing SUSY_sklearn.py from spyder,
-It will be seen that both GRADIENT FOREST and ADABOOST have a 100% hit rate (20 hits, 0 misses).
+It will be seen that all classifiers  shows 16 hits and 4 failures except RANDON FOREST  wich shows 18 hits and 2 failures.
 While NAIVE BAYES has 19 hits and 1 miss.
 
 If, intentionally, the class of the first 3 records of Susy20.txt is changed, or the attached Susy20Bad.txt file is used, which is the Susy20.txt with those
