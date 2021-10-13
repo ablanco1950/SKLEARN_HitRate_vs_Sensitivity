@@ -67,7 +67,7 @@ The results offered on the website: http://physics.bu.edu/~pankajm/ML-Notebooks/
 
 "Using Pyspark Environment for Solving a Big Data Problem: Searching for Supersymmetric Particles" Mourad Azhari, Abdallah Abarda, Badia Ettaki, Jamal Zerouaoui, Mohamed Dakkon International Journal of Innovative Technology and Exploring Engineering (IJITEE) ISSN: 2278-3075, Volume-9 Issue-7, May 2020 https://www.researchgate.net/publication/341301008_Using_Pyspark_Environment_for_Solving_a_Big_Data_Problem_Searching_for_Supersymmetric_Particles
 
-The one already referenced before: https: //github.com/ablanco1950/SUSY_WEIGHTED_V1 
+The one already referenced before: https: //github.com/ablanco1950/SUSY_WEIGHTED_V1 (78,09% hit rate)
 
 To the HASTIE file:
 
@@ -75,7 +75,7 @@ Implementation of AdaBoost classifier
 
 https://github.com/jaimeps/adaboost-implementation
 
-https://github.com/ablanco1950/HASTIE_NAIVEBAYES
+https://github.com/ablanco1950/HASTIE_NAIVEBAYES (84% hit rate)
 
 To the ABALONE file:
 
@@ -83,5 +83,5 @@ https://archive.ics.uci.edu/ml/datasets/abalone, especially the download of the 
 achieved with this file, however with GRADIENT FOREST (RandomForestClassifier) ​​100% hit rates are achieved not only considering the 3 classes in
 that the 29 classes are summarized, to consider the 29 classes ( run in spyder the attached ABALONE_with_29Classes_sklearn.py)
 
-https://github.com/ablanco1950/ABALONE_NAIVEBAYES_WEIGHTED_ADABOOST
-https://github.com/ablanco1950/ABALONE_DECISIONTREE_C4-5
+https://github.com/ablanco1950/ABALONE_NAIVEBAYES_WEIGHTED_ADABOOST (58% hit rate)
+https://github.com/ablanco1950/ABALONE_DECISIONTREE_C4-5 (58% hit rate)
