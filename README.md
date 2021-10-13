@@ -67,7 +67,7 @@ The results offered on the website: http://physics.bu.edu/~pankajm/ML-Notebooks/
 
 "Using Pyspark Environment for Solving a Big Data Problem: Searching for Supersymmetric Particles" Mourad Azhari, Abdallah Abarda, Badia Ettaki, Jamal Zerouaoui, Mohamed Dakkon International Journal of Innovative Technology and Exploring Engineering (IJITEE) ISSN: 2278-3075, Volume-9 Issue-7, May 2020 https://www.researchgate.net/publication/341301008_Using_Pyspark_Environment_for_Solving_a_Big_Data_Problem_Searching_for_Supersymmetric_Particles
 
-The one already referenced before: https: //github.com/ablanco1950/SUSY_WEIGHTED_V1 
+The one already referenced before: https://github.com/ablanco1950/SUSY_WEIGHTED_V1 (78,09% hit rate)
 
 
 To the HASTIE file:
