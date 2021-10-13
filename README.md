@@ -18,19 +18,20 @@ By executing the attached programs indicated, the following percentages of succe
 
                                            SUSY                   HASTIE                  ABALONE
                                       SUSY_sklearn.py          HASTIE_sklearn.py       ABALONE_sklearn.py
+                                  (only 300.000 records)
 
-NAIVE BAYES______________________________74.41%_________________75.04%______________________54.9%
+NAIVE BAYES______________________________74.41%___________________75.04%______________________54.9%
 (GaussianNB)
 
 
-RANDOM FOREST                             78,1%                    81,75%                    65,07%
+RANDOM FOREST____________________________78,1%____________________81,75%______________________65,07%
 (RandomForestClassifier)
 
 
-ADABOOST                                   77.6%                   80.75%                   61.72%
+ADABOOST_________________________________77.6%____________________80.75%______________________61.72%
 (AdaBoostClassifier)
 
-GRADIENT BOOST                             78.26%                  84,8%                    64.7%
+GRADIENT BOOST___________________________78.26%___________________84,8%_______________________64.7%
 (GradientBoostClassifier)
 
   
@@ -40,7 +41,7 @@ It will be seen that all classifiers  shows 13 hits and 7 failures except RANDON
 
 If, intentionally, the class of the first 3 records of Susy20.txt is changed, or the attached Susy20Bad.txt file is used, which is the Susy20.txt with the three errors introduced, in which case line 16 of the SUSY_sklearn.py program would have to be changed, changing the file assignment. It is observed that classifiers reflects the 3 misses added except RANDOM FOREST that shows 18 errors and 2 hits, reflecting only one of the three errors introduced.
 
-Due to memory problems only 30000 records of SUSY are considered.
+Due to memory problems only 300.000 records of SUSY are considered.
 
 Comparing with other program and environment:
 
@@ -66,7 +67,7 @@ The results offered on the website: http://physics.bu.edu/~pankajm/ML-Notebooks/
 
 "Using Pyspark Environment for Solving a Big Data Problem: Searching for Supersymmetric Particles" Mourad Azhari, Abdallah Abarda, Badia Ettaki, Jamal Zerouaoui, Mohamed Dakkon International Journal of Innovative Technology and Exploring Engineering (IJITEE) ISSN: 2278-3075, Volume-9 Issue-7, May 2020 https://www.researchgate.net/publication/341301008_Using_Pyspark_Environment_for_Solving_a_Big_Data_Problem_Searching_for_Supersymmetric_Particles
 
-The one already referenced before: https: //github.com/ablanco1950/SUSY_WEIGHTED_V1
+The one already referenced before: https: //github.com/ablanco1950/SUSY_WEIGHTED_V1 
 
 To the HASTIE file:
 
