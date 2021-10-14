@@ -48,7 +48,7 @@ Comparing with other program and environment:
 Downloading and installing the procedure found at https://github.com/ablanco1950/SUSY_WEIGHTED_V1 and running AssignClassWithSusyWeighted_v1.bat,
 changing before the only line of the procedure, so that it is:
 
-java -jar AssignClassWithSusyWeighted_v1.jar c: \ SusyWeighted78PercentHits.txt c: \ SUSY20.txt 0.0 4500000.0 0.0 4500000.0 5000000.0
+java -jar AssignClassWithSusyWeighted_v1.jar c:\SusyWeighted78PercentHits.txt c:\SUSY20.txt 0.0 4500000.0 0.0 4500000.0 5000000.0
 
 So change the reference to SUSY.csv to SUSY20.txt, you get 16 hits and 4 misses.
 
