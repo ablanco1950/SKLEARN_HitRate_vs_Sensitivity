@@ -39,7 +39,7 @@ Then, when repeating the test for SUSY with the attached program SUSY_sklearn_wi
 it consists of the attached Susy20.txt file, which must be transferred to the C: drive, which contains only 20 records extracted from SUSY.csv, and executing SUSY_sklearn_with_test_out_train.py from spyder.
 It will be seen that all classifiers  shows 16 hits and 4 failures except RANDON FOREST  wich shows 18 hits and 2 failures.
 
-If, intentionally, the class of the first 3 records of Susy20.txt is changed, or the attached Susy20Bad.txt file is used, which is the Susy20.txt with the three errors introduced, in which case line 16 of the SUSY_sklearn.py program would have to be changed, changing the file assignment. It is observed that classifiers reflects the 3 misses added, 13 hits 7 misses, except RANDOM FOREST that shows 17 hits and 3 hits, reflecting only one of the three errors introduced.
+If, intentionally, the class of the first 3 records of Susy20.txt is changed, or the attached Susy20Bad.txt file is used, which is the Susy20.txt with the three errors introduced, in which case line 16 of the SUSY_sklearn.py program would have to be changed, changing the file assignment. It is observed that classifiers reflects the 3 misses added, 13 hits 7 misses, except RANDOM FOREST that shows 17 hits and 3 misses, reflecting only one of the three errors introduced.
 
 Due to memory problems only 300.000 records of SUSY are considered.
 
