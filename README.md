@@ -76,7 +76,7 @@ Implementation of AdaBoost classifier
 
 https://github.com/jaimeps/adaboost-implementation
 
-https://github.com/ablanco1950/HASTIE_NAIVEBAYES (84% hit rate)
+https://github.com/ablanco1950/HASTIE_NAIVEBAYES (87,13% hit rate)
 
 To the ABALONE file:
 
