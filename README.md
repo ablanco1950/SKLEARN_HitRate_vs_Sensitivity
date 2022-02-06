@@ -25,15 +25,23 @@ NAIVE BAYES______________________________74.30%___________________75.04%________
 (GaussianNB)
 
 
-RANDOM FOREST__________________________95,81%____ ______________81,75%______________________65,07%
+RANDOM FOREST_________________________95,81%____ ______________81,75%______________________65,07%
 (RandomForestClassifier)
 
 
-ADABOOST________________________________77.6%____________________80.75%______________________61.72%
+ADABOOST________________________________78.05%____________________80.75%______________________61.72%
 (AdaBoostClassifier)
 
-GRADIENT BOOST_________________________78.26%___________________84,8%_______________________64.7%
+GRADIENT BOOST_________________________78.47%___________________-----_______________________-----
 (GradientBoostClassifier)
+
+LOGISTIC REGRESSION____________________78.47%___________________-----_______________________-----
+(LogisticRegression)
+
+DECISION TREE_________________________100.00%___________________-----_______________________-----
+(DecisionTreeClassifier)
+
+
 
   
 Then, when repeating the test for SUSY with the attached program SUSY_sklearn_with_test_out_train.py in which the test file is separated from the training file and
