@@ -1,4 +1,4 @@
-Using the Sklearn classifiers: Naive Bayes, Random Forest, Adaboost and Gradient Boost, good success rates are observed in a very simple manner. In this work sensitivity is also considered.
+Using the Sklearn classifiers: Naive Bayes, Random Forest, Adaboost, Gradient Boost, Logistic Regression and Decision Tree good success rates are observed in a very simple manner. In this work sensitivity is also considered.
 
 Requirements:
 
