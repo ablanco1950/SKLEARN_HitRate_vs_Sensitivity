@@ -1,4 +1,5 @@
 Using the Sklearn classifiers: Naive Bayes, Random Forest, Adaboost, Gradient Boost, Logistic Regression and Decision Tree good success rates are observed in a very simple manner. In this work sensitivity is also considered.
+Treating each record individually, differences are found in the results for each record depending on the model used, which is hidden in treatments that compute a total volume of data
 
 Requirements:
 
