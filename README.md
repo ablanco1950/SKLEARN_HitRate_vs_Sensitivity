@@ -80,16 +80,16 @@ DECISION TREE__________________________20/0___________________19/1______________
 
 CONCLUSIONS:
 
-DecisionTree:
+DECISION TREE:
 gives wrong results, if it gave 20 hits and 0 errors, changing the class of the first three records should have given 17 hits and 3 errors
 
+RANDOM FOREST, GRADIENT BOOST and LOGISTIC REGRESSION:
+They are impracticably slow. To check errors you would have to check each record by an expert
 
+NAIVE BAYES and ADABOOST
+The errors and successes should be verified by an expert, the results coincide with those obtained in another project that is detailed below. ADABOOST has an execution time more than 100 times higher than NAIVE BAYES
 
 Comparing with other program and environment:
-
-TESTS with SUSY.csv:
-
-The tests showed in the previous table have been developed considering the first 4.500.000 records as training file and the last 500.000 records as test file 
 
 Downloading and installing the procedure found at https://github.com/ablanco1950/SUSY_WEIGHTED_V1 and running AssignClassWithSusyWeighted_v1.bat,
 changing before the only line of the procedure, so that it is:
