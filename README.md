@@ -54,7 +54,7 @@ Due to memory problems only 300.000 records of SUSY are considered.
 
 Comparing with other program and environment:
 
-TESTS with SUSY.csv
+TESTS with SUSY.csv:
 
 The tests showed in the previous table have been developed considering the first 4.500.000 records as training file and the last 500.000 records as test file 
 
