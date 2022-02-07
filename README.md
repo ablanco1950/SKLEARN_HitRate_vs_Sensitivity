@@ -54,11 +54,28 @@ Both files are attached for convenience.
 Changing line 21 in the SUSY_sklearn_with_test_out_train.py program to consider SUSY20.txt or SUSY 20bad.txt as the test file and removing the # comment mark on line 23, the following results are obtained:
 
 
-Then, when repeating the test for SUSY with the attached program SUSY_sklearn_with_test_out_train.py in which the test file is separated from the training file and
-it consists of the attached Susy20.txt file, which must be transferred to the C: drive, which contains only 20 records extracted from SUSY.csv, and executing SUSY_sklearn_with_test_out_train.py from spyder.
-It will be seen that all classifiers  shows 16 hits and 4 failures except RANDON FOREST  wich shows 18 hits and 2 failures.
+                                        SUSY20.txt             SUSY20bad.txt             TIME
+                                      hits/failures            hits/failures            seconds
+                                  
 
-If, intentionally, the class of the first 3 records of Susy20.txt is changed, or the attached Susy20Bad.txt file is used, which is the Susy20.txt with the three errors introduced, in which case line 16 of the SUSY_sklearn.py program would have to be changed, changing the file assignment. It is observed that classifiers reflects the 3 misses added, 13 hits 7 misses, except RANDOM FOREST that shows 17 hits and 3 misses, reflecting only one of the three errors introduced.
+NAIVE BAYES______________________________16/4___________________13/7______________________3,3
+(GaussianNB)
+
+
+RANDOM FOREST_________________________16/4____ ______________18/2______________________2.091,8
+(RandomForestClassifier)
+
+
+ADABOOST________________________________16/4____________________13/7______________________410
+(AdaBoostClassifier)
+
+GRADIENT BOOST_________________________16/4___________________13/7_______________________1.522
+(GradientBoostClassifier)
+
+LOGISTIC REGRESSION____________________15/5___________________12/8_______________________4.112
+(LogisticRegression)
+
+DECISION TREE__________________________20/0___________________19/1_______________________89,9
 
 Due to memory problems only 300.000 records of SUSY are considered.
 
