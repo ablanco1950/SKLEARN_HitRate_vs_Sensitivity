@@ -47,6 +47,13 @@ TESTS WITH SUSY.CSV:
 
 The tests showed in the table before have been got considering te first 4.500.000 records of SUSY as training file and the last 500.000 records as test file.
   
+In order to be able to individually monitor each record that may appear as wrong or true according to the different records, a selection of only 20 SUSY.csv records that make up the SUSY20.txt file is made.
+In this file, the classes of the first three registers are changed and saved as SUSY20bad.txt.
+Both files are attached for convenience.
+
+Changing line 21 in the SUSY_sklearn_with_test_out_train.py program to consider SUSY20.txt or SUSY 20bad.txt as the test file and removing the # comment mark on line 23, the following results are obtained:
+
+
 Then, when repeating the test for SUSY with the attached program SUSY_sklearn_with_test_out_train.py in which the test file is separated from the training file and
 it consists of the attached Susy20.txt file, which must be transferred to the C: drive, which contains only 20 records extracted from SUSY.csv, and executing SUSY_sklearn_with_test_out_train.py from spyder.
 It will be seen that all classifiers  shows 16 hits and 4 failures except RANDON FOREST  wich shows 18 hits and 2 failures.
