@@ -66,18 +66,17 @@ RANDOM FOREST_________________________16/4____ ______________18/2_______________
 (RandomForestClassifier)
 
 
-ADABOOST________________________________16/4____________________13/7______________________410
+ADABOOST________________________________16/4__________________13/7________________________410
 (AdaBoostClassifier)
 
-GRADIENT BOOST_________________________16/4___________________13/7_______________________1.522
+GRADIENT BOOST_________________________16/4__________________13/7________________________1.522
 (GradientBoostClassifier)
 
-LOGISTIC REGRESSION____________________15/5___________________12/8_______________________4.112
+LOGISTIC REGRESSION____________________15/5__________________12/8________________________4.112
 (LogisticRegression)
 
 DECISION TREE__________________________20/0___________________19/1_______________________89,9
-
-Due to memory problems only 300.000 records of SUSY are considered.
+(DecisionTreeClassifier)
 
 Comparing with other program and environment:
 
