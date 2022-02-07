@@ -54,8 +54,8 @@ Both files are attached for convenience.
 Changing line 21 in the SUSY_sklearn_with_test_out_train.py program to consider SUSY20.txt or SUSY 20bad.txt as the test file and removing the # comment mark on line 23, the following results are obtained:
 
 
-                                        SUSY20.txt             SUSY20bad.txt             TIME
-                                      hits/failures            hits/failures            seconds
+                                        SUSY20.txt           SUSY20bad.txt              TIME
+                                      hits/failures          hits/failures             seconds
                                   
 
 NAIVE BAYES______________________________16/4___________________13/7______________________3,3
@@ -77,6 +77,13 @@ LOGISTIC REGRESSION____________________15/5__________________12/8_______________
 
 DECISION TREE__________________________20/0___________________19/1_______________________89,9
 (DecisionTreeClassifier)
+
+CONCLUSIONS:
+
+DecisionTree:
+gives wrong results, if it gave 20 hits and 0 errors, changing the class of the first three records should have given 17 hits and 3 errors
+
+
 
 Comparing with other program and environment:
 
