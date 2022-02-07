@@ -91,19 +91,7 @@ The errors and successes should be verified by an expert, the results coincide w
 
 Comparing with other program and environment:
 
-Downloading and installing the procedure found at https://github.com/ablanco1950/SUSY_WEIGHTED_V1 and running AssignClassWithSusyWeighted_v1.bat,
-changing before the only line of the procedure, so that it is:
-
-java -jar AssignClassWithSusyWeighted_v1.jar c:\SusyWeighted78PercentHits.txt c:\SUSY20.txt 0.0 4500000.0 0.0 4500000.0 5000000.0
-
-So change the reference to SUSY.csv to SUSY20.txt, you get 16 hits and 4 misses.
-
- By repeating the procedure referencing the SUSY20Bad.txt file instead of SUSY20.txt, that is, referencing the SUSY20.txt to which the classes of
-the first three records has been changed, and executing AssignClassWithSusyWeighted_v1.bat, first changing the only line of the procedure, so that it is:
-
-java -jar AssignClassWithSusyWeighted_v1.jar c:\SusyWeighted78PercentHits.txt c:\SUSY20Bad.txt 0.0 4500000.0 0.0 4500000.0 5000000.0
-
-13 hits and 7 failures are obtained, that is, the 3 errors introduced when changing the classes of the first 3 registers have been detected.
+Project https://github.com/ablanco1950/SUSY_WEIGHTED_V1 results are obtained with a hit rate higher than NAIVE BAYES
 
 REFERENCES:
 
