@@ -38,11 +38,11 @@ GRADIENT BOOST_________________________78.47%___________________-----___________
 LOGISTIC REGRESSION____________________76.83%___________________-----_______________________-----
 (LogisticRegression)
 
-DECISION TREE__________________________100.00%___________________-----_______________________-----
+DECISION TREE__________________________100.00%___________________--- --_______________________-----
 (DecisionTreeClassifier)
 
 
-
+TESTS WITH SUSY.CSV:
   
 Then, when repeating the test for SUSY with the attached program SUSY_sklearn_with_test_out_train.py in which the test file is separated from the training file and
 it consists of the attached Susy20.txt file, which must be transferred to the C: drive, which contains only 20 records extracted from SUSY.csv, and executing SUSY_sklearn_with_test_out_train.py from spyder.
