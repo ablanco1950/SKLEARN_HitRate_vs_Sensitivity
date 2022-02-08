@@ -18,7 +18,7 @@ By executing the attached programs indicated, the following percentages of succe
 
 
                                            SUSY                   HASTIE                  ABALONE
-                      SUSY_sklearn_with_test_out_of_train.py    HASTIE_sklearn.py       ABALONE_sklearn.py
+                      SUSY_sklearn_with_test_out_of_train.py    HASTIE_sklearn_with_test_out_of_train.py       ABALONE_sklearn.py
                                   
 
 NAIVE BAYES______________________________74.30%___________________75.04%______________________54.9%
