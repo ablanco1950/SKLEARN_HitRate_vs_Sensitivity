@@ -18,24 +18,22 @@ By executing the attached programs indicated, the following percentages of succe
 
 
                                            SUSY                              HASTIE                                       ABALONE
-                      SUSY_sklearn_with_test_out_of_train.py    HASTIE_sklearn_with_test_out_of_train.py       ABALONE_sklearn_with_test_out_of_train.py
+                      SUSY_sklearn_with_test_out_of_train.py    HASTIE_sklearn_with_test_out_of_train.py          ABALONE_sklearn.py
                                   
 
 NAIVE BAYES______________________________74.30%___________________________________74,25%
-(GaussianNB)
 
 
 RANDOM FOREST___________________________95,81%____________________________________100,00%
 
-ADABOOST________________________________78.05%_____________________________________82.83%____________________________________________________61.72%
-(AdaBoostClassifier)
+ADABOOST________________________________78.05%_____________________________________82.83%
 
-GRADIENT BOOST_________________________78.47________________________________________88,29%__________________________________________________
+GRADIENT BOOST_________________________78.47_______________________________________88,29%
 
 LOGISTIC REGRESSION____________________76.83%______________________________________51,45%
 (LogisticRegression)
 
-DECISION TREE__________________________100.00%______________________________________ 100.00%____________________
+DECISION TREE__________________________100.00%_____________________________________ 100.00%____________________
 (DecisionTreeClassifier)
 
 
