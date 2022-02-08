@@ -17,19 +17,19 @@ ABALONE: to download from (https://archive.ics.uci.edu/ml/datasets/abalone))
 By executing the attached programs indicated, the following percentages of successes are obtained in the test:
 
 
-                                           SUSY                   HASTIE                  ABALONE
-                      SUSY_sklearn_with_test_out_of_train.py    HASTIE_sklearn_with_test_out_of_train.py       ABALONE_sklearn.py
+                                           SUSY                              HASTIE                                       ABALONE
+                      SUSY_sklearn_with_test_out_of_train.py    HASTIE_sklearn_with_test_out_of_train.py       ABALONE_sklearn_with_test_out_of_train.py
                                   
 
-NAIVE BAYES______________________________74.30%___________________75.04%______________________54.9%
+NAIVE BAYES______________________________74.30%_________________________________54.9%
 (GaussianNB)
 
 
-RANDOM FOREST_________________________95,81%____ ______________81,75%______________________65,07%
+RANDOM FOREST_________________________95,81%___________________________________81,75%_______________________________________65,07%
 (RandomForestClassifier)
 
 
-ADABOOST________________________________78.05%____________________80.75%______________________61.72%
+ADABOOST________________________________78.05%_________________________________80.75%____________________________________________________61.72%
 (AdaBoostClassifier)
 
 GRADIENT BOOST_________________________78.47%___________________-----_______________________-----
