@@ -87,6 +87,55 @@ Comparing with other program and environment:
 
 Project https://github.com/ablanco1950/SUSY_WEIGHTED_V1 results are obtained with a hit rate higher than NAIVE BAYES
 
+
+
+TESTS WITH HASTIE:
+
+The tests showed in the first table  have been got considering te first 3.177 records of SUSY as training file and the last 1.044 records as test file.
+  
+In order to be able to individually monitor each record that may appear as wrong or true according to the different records, a selection of only 20 HASTIE records that make up the Hastie10_2_20.txt file is made.
+
+In this file, the classes of the first three registers are changed and saved as Hastie10_2_20bad.txt.
+Both files are attached for convenience.
+
+Changing line 20 in the HASTIE_sklearn_with_test_out_train.py program, taking off the comment indicator #, and also taking off the # in line 23, considering Hastie10_2_20.txt as test file or taking off the # in line 24 in wich case Hastie10_2_20bad.txt would be considered test file, the following results are obtained:
+
+
+                                    Hastie10_2_20.txt    Hastie10_2_20bad.txt           TIME
+                                      hits/failures          hits/failures             seconds
+                                  
+
+NAIVE BAYES______________________________15/5___________________14/6______________________3,3
+(GaussianNB)
+
+
+RANDOM FOREST_________________________20/0____ ______________17/3______________________2.091,8
+(RandomForestClassifier)
+
+
+ADABOOST________________________________16/4__________________13/7________________________410
+(AdaBoostClassifier)
+
+GRADIENT BOOST_________________________16/4__________________13/7________________________1.522
+(GradientBoostClassifier)
+
+LOGISTIC REGRESSION____________________9/11__________________10/10________________________4.112
+(LogisticRegression)
+
+DECISION TREE___________________________20/0___________________19/1_______________________89,9
+(DecisionTreeClassifier)
+
+CONCLUSIONS:
+
+DECISION TREE:
+gives wrong results, if it gave 20 hits and 0 errors, changing the class of the first three records should have given 17 hits and 3 errors
+
+For the rest, given the diferrences in the results for each model and as are only 20 records to check, the results should be checked manually by an expert.
+
+Comparing with other program and environment:
+
+Project https://github.com/ablanco1950/SUSY_WEIGHTED_V1 results are obtained with a hit rate higher than NAIVE BAYES
+
 REFERENCES:
 
 To the SUSY.csv file:
