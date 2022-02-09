@@ -132,10 +132,6 @@ gives wrong results, if it gave 20 hits and 0 errors, changing the class of the 
 
 For the rest, given the diferrences in the results for each model and as are only 20 records to check, the results should be checked manually by an expert.
 
-Comparing with other program and environment:
-
-Project https://github.com/ablanco1950/SUSY_WEIGHTED_V1 results are obtained with a hit rate higher than NAIVE BAYES
-
 REFERENCES:
 
 To the SUSY.csv file:
@@ -154,6 +150,8 @@ Implementation of AdaBoost classifier
 https://github.com/jaimeps/adaboost-implementation
 
 https://github.com/ablanco1950/HASTIE_NAIVEBAYES (87,13% hit rate)
+https://github.com/ablanco1950/HASTIE_Corrected_HitRate_vs_Sensitivity
+https://github.com/ablanco1950/HASTIE_Corrected_DecisionTree (99% hit rate)
 
 To the ABALONE file:
 
