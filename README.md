@@ -17,8 +17,8 @@ ABALONE: to download from (https://archive.ics.uci.edu/ml/datasets/abalone))
 By executing the attached programs indicated, the following percentages of successes are obtained in the test:
 
 
-                                           SUSY                              HASTIE                                     ABALONE
-                      SUSY_sklearn_with_test_out_of_train.py    HASTIE_sklearn_with_test_out_of_train.py          ABALONE_sklearn.py
+                                           SUSY                              HASTIE                                   ABALONE
+                      SUSY_sklearn_with_test_out_of_train.py    HASTIE_sklearn_with_test_out_of_train.py        ABALONE_sklearn.py
                                   
 
 NAIVE BAYES__________________________74.30%___________________________________74,25%_________________________________57,18%
