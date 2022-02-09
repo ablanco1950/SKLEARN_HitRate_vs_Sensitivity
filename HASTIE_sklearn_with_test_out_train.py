@@ -5,9 +5,6 @@ Inicio1=time.time()
 Fin1=time.time()
 Fin=Fin1-Inicio1
 
-from sklearn.model_selection import train_test_split
-
-
 #https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html
 
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
@@ -20,8 +17,11 @@ from sklearn.tree import DecisionTreeClassifier
 arr=[]
 arry=[]
 ContDesde=9600
+#ContDesde=0
 ContaMax=12000;
 f=open("C:\Hastie10_2.csv","r")
+#f=open("C:\Hastie10_2_20.txt","r")
+#f=open("C:\Hastie10_2_20bad.txt","r")
 
 Conta=0;
 for linea in f:
